@@ -1,0 +1,16 @@
+{
+  "name": "hrm-autotest",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ui": "playwright test tests/ui",
+    "test:smoke": "playwright test --grep @smoke"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
